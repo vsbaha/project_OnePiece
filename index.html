@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="index.html">
+                    <div class="logotype">
+                        <img src="images/emblem.png" alt="one piece">
+                        <h2>One piece</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="pages/home_works.html">Играть</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/lessons.html">Купить билет</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="https://jut.su/oneepiece/episode-1.html">Мне интересно!</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Связаться с нами</button>
+            </div>
+        </div>
+    </div>
+    <div class="main_block">
+        <div class="container">
+            <div class="inner_main">
+                <h1><strong id="js-color">One Piece</strong> — величайшее сокровище в мире, собранное Королём Пиратов Гол Д. Роджером.</h1>
+                <div class="colors-buttons">
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <h3>Белли</h3>
+                            <p>Является единицей денежной валюты во вселенной One Piece. Они почти всегда представлены в бумажном виде, хотя существуют и монеты.</p>
+                            <a href="https://onepiece.fandom.com/ru/wiki/%D0%91%D0%B5%D0%BB%D0%BB%D0%B8" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Расы</h3>
+                            <p>Также называемые Племенами — группы разумных существ, которые разделяют отличительные физические черты. Многие расы сосуществуют в мире, а некоторые происходят из Луны.</p>
+                            <a href="https://onepiece.fandom.com/ru/wiki/%D0%A0%D0%B0%D1%81%D1%8B" target="_blank">Узнать подробнее</a>
+                         </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Хаки</h3>
+                            <p>Таинственная сила, присутствующая в каждом живом существе мира One Piece, которая позволяет пользователям использовать её для различных целей.</p>
+                            <a href="https://onepiece.fandom.com/ru/wiki/%D0%A5%D0%B0%D0%BA%D0%B8" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Худшее Поколение</h3>
+                            <p>это термин, который относится к одиннадцати пиратам-супер новичкам с наградами более 100 000 000 BELLI, прибывшим на Архипелаг Сабаоди до Великой Войны (раньше их называли «Одиннадцать Сверхновых» (11人の超新星 «Дзю: итинин но Тё: синсэи»)[1]), и к одному из Ёнко — «Чёрной Бороде» Маршаллу Д. Тичу.</p>
+                            <a href="https://onepiece.fandom.com/ru/wiki/%D0%A5%D1%83%D0%B4%D1%88%D0%B5%D0%B5_%D0%9F%D0%BE%D0%BA%D0%BE%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="persons_slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="persons_slider">
+                    <button class="btn-slide" id="person_prev">&lt;prev</button>
+                    <div class="person_slide person_active_slide">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="person_slide ">
+                        <div class="person_slide_card">
+                            <div class="person_desc">
+                                <h4>LOREd</h4>
+                                <div class="about_person">
+                                    <div>Награда: <span class="person_reward"></span></div>
+                                    <div>Возраст: <span class="person_age">14</span></div>
+                                    <div>Сильные стороны <span class="person_strong_sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, repudiandae?</span></div>
+                                </div>
+
+                            </div>
+                            <img src="images/straw_hat-members/luffy.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="person_next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab_slider">
+        <div class="container">
+            <h3>Самые популярные фрукты</h3>
+            <div class="inner_tab_slider">
+                <div class="tab_contents_block">
+
+                    <div class="tab_content_block">
+                        <img src="images/fruits/yami.jpg" alt="fruit">
+                        <div class="desc">
+                            <h4>Ями Ями но Ми</h4>
+                            <p> Дьявольский плод типа Логия, что позволяет пользователю создавать и контролировать тьму по желанию, делая пользователя Человеком Тьмой (闇人間 Ями Нингэн?).[3] Его съел Маршалл Д. Тич, также известный как "Чёрная Борода", который украл его у командира 4-ой дивизии Пиратов Белоуса Татча.</p>
+                        </div>
+                    </div>
+                    <div class="tab_content_block">
+                        <img src="images/fruits/goro.jpg" alt="fruit">
+                        <div class="desc">
+                            <h4>Горо Горо но Ми</h4>
+                            <p>Дьявольский плод типа логия, который позволяет пользователю создавать, контролировать и превращаться в электричество/молнию по желанию.</p>
+                        </div>
+                    </div>
+                    <div class="tab_content_block">
+                        <img src="images/fruits/tori.jpg" alt="fruit">
+                        <div class="desc">
+                            <h4>Тори Тори но Ми, модель: Феникс</h4>
+                            <p> Дьявольский плод типа мифический зоан, который позволяет своему пользователю превращаться в феникса и гибрид феникса и человека. Он был съеден Марко, но был назван только в Vivre Card - One Piece Visual Dictionary.[1]</p>
+                        </div>
+                    </div>
+                    <div class="tab_content_block">
+                        <img src="images/fruits/gomu-fruit.png" alt="fruit">
+                        <div class="desc">
+                            <h4>Гому Гому но Ми</h4>
+                            <p> Первоначально известный как Хито Хито но Ми, модель: Ника, представляет собой дьявольский плод типа Мифический зоан, который позволяет пользователю превращаться в легендарного «Бога Солнца» Ника и получить его способности, а именно тело со свойствами резины.[6] Мировое Правительство переименовало его, чтобы стереть из истории первоначальное название плода, и в результате он был реклассифицирован как плод типа парамеция[4], который якобы превращает пользователя в Резинового Человека (ゴム人間 Гому Нингэн?).[3].</p>
+                        </div>
+                    </div>
+                    <div class="tab_content_block">
+                        <img src="images/fruits/PikaPikaYuh.webp" alt="fruit">
+                        <div class="desc">
+                            <h4>Пика Пика но Ми</h4>
+                            <p>Дьявольский плод типа логия, который позволяет пользователю создавать, контролировать и превращаться в свет. «Пика пика» — это звукоподражание мерцанию и блеску света. Он был съеден Борсалино, более известным как адмирал Кидзару.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab_content_items">
+                        <div class="tab_content_item tab_content_item_active">Ями Ями но Ми</div>
+                        <div class="tab_content_item">Горо Горо но Ми</div>
+                        <div class="tab_content_item">Тори Тори но Ми</div>
+                        <div class="tab_content_item">Гому Гому но Ми</div>
+                        <div class="tab_content_item">Пика Пика но Ми</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video">
+        <div class="container">
+            <h3>Быстрый обзор последних серий</h3>
+            <div class="inner_block_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AJfl-VXHBT0?si=bAOQn63S-CDkb-7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
+                <div class="inner_footer">
+                    <h2>Made by NurDinBuy</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input
+                    required
+                    placeholder="Ваше имя"
+                    name="name"
+                    type="text"
+                    class="modal_input"
+                >
+                <input
+                    required
+                    placeholder="Ваш номер телефона"
+                    name="phone"
+                    type="text"
+                    class="modal_input"
+                >
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>

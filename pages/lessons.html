@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="../index.html">
+                    <div class="logotype">
+                        <img src="../images/emblem.png" alt="one piece">
+                        <h2>One piece</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="../pages/home_works.html">Играть</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="../pages/lessons.html">Купить билет</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="https://jut.su/oneepiece/episode-1.html">Мне интересно!</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Связаться с нами</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="phone_block">
+        <div class="container">
+            <h3>Phone checker</h3>
+            <div class="inner_phone_block">
+                <div class="form_phone">
+                    <label for="phone_input">Введите ваш номер телефона</label>
+                    <input type="text" id="phone_input" placeholder="+996 XXX XX-XX-XX">
+                    <button class="btn" id="phone_button">Отправить заявку</button>
+                    <span class="checker" id="phone_result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="converter">
+        <div class="container">
+            <h3>CONVERTER</h3>
+            <div class="inner_converter">
+                <div class="som">
+                    <label for="som">Som</label>
+                    <input type="number" id="som">
+                </div>
+                <div class="usd">
+                    <label for="usd">Usd</label>
+                    <input type="number" id="usd">
+                </div>
+<!--                <div class="eur">-->
+<!--                    <label for="eur">Eur</label>-->
+<!--                    <input type="number" id="eur">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="card_switcher">
+        <div class="container">
+            <h3>Card Switcher</h3>
+            <div class="inner_card_switcher">
+                <button class="btn" id="btn-prev">prev</button>
+                <div class="card"></div>
+                <button class="btn" id="btn-next">next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather">
+        <div class="container">
+            <div class="inner_weather">
+                <div>
+                    <input type="text" class="cityName" placeholder="Найти погоду в...">
+                </div>
+                <div>
+                    <span class="city"></span>
+                    <hr>
+                    <span class="temp"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
+                <div class="inner_footer">
+                    <h2>Made by NurDinBuy</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/lesson.js"></script>
+<script src="../js/modal.js"></script>
+</html>
+
