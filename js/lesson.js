@@ -22,8 +22,9 @@ phoneButton.onclick = () => {
 
 somInput = document.querySelector('#som')
 usdInput = document.querySelector('#usd')
+belliInput = document.querySelector('#belli')
 
-const converter = (element, targetElement, currentValue) => {
+const converter = (element, targetElement, targetElement2, currentValue) => {
 	element.oninput = () => {
 		const request = new XMLHttpRequest()
 		request.open('GET', '../json/converter.json')
@@ -34,9 +35,15 @@ const converter = (element, targetElement, currentValue) => {
 			switch (currentValue) {
 				case 'som':
 					targetElement.value = (element.value / response.usd).toFixed(2)
+					targetElement2.value = (element.value / response.belli).toFixed(2)
 					break
 				case 'usd':
 					targetElement.value = (element.value * response.usd).toFixed(2)
+					targetElement2.value = ((element.value * response.usd) / response.belli).toFixed(2)
+					break
+				case 'belli':
+					targetElement.value = (element.value * response.belli).toFixed(2)
+					targetElement2.value = ((element.value / response.belli) * response.usd).toFixed(2)
 					break
 				default:
 					break
@@ -46,5 +53,6 @@ const converter = (element, targetElement, currentValue) => {
 	}
 }
 
-converter(somInput, usdInput, 'som')
-converter(usdInput, somInput, 'usd')
+converter(somInput, usdInput, belliInput, 'som')
+converter(usdInput, somInput, belliInput, 'usd')
+converter(belliInput, somInput, usdInput, 'belli')
