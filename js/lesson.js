@@ -43,7 +43,7 @@ const converter = (element, targetElement, targetElement2, currentValue) => {
 					break
 				case 'belli':
 					targetElement.value = (element.value * response.belli).toFixed(2)
-					targetElement2.value = ((element.value / response.belli) * response.usd).toFixed(2)
+					targetElement2.value = ((element.value * response.belli) / response.usd).toFixed(2)
 					break
 				default:
 					break
