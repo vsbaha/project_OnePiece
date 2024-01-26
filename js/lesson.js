@@ -111,4 +111,3 @@ const gettingData = () => {
 }
 
 gettingData()
-
