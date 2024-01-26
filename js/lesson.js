@@ -77,24 +77,31 @@ const cardFetcher = (id) => {
 		})
 }
 
+
+
 btnNext.onclick = () => {
-	if (count === 200){
-		count = 0
+	switch (count) {
+		case 200:
+			count = 0
+			break
 	}
 	count++
 	cardFetcher(count)
 }
 
 btnPrev.onclick = () => {
-	if (count === 1){
-		count = 201
+	switch (count) {
+		case 1:
+			count = 201
+			break
 	}
 	count--
 	cardFetcher(count)
 }
 
-cardFetcher(count)
 
+
+cardFetcher(count)
 const gettingData = () => {
 	fetch('https://jsonplaceholder.typicode.com/posts')
 		.then(response => response.json())
@@ -102,4 +109,6 @@ const gettingData = () => {
 			console.log(data)
 		})
 }
+
 gettingData()
+
