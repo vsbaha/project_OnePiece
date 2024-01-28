@@ -1,0 +1,39 @@
+.wrapper, html {
+    background-color: black;
+}
+
+.chat {
+    margin-top: 100px;
+}
+
+#chat-container {
+    width: auto;
+    height: 150vh;
+    border: 1px solid #ff8900;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 55px;
+}
+
+#user-input {
+    width: calc(100% - 255px);
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.user {
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: right;
+}
+
+.bot {
+    background-color: #f1f1f1;
+}

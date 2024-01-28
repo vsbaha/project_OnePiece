@@ -146,7 +146,6 @@ const getPersonData = () => {
 
     request.addEventListener('load', () => {
         const personsData = JSON.parse(request.response)
-        console.log(typeof personsData)
         const setPerson = (i = 0) => {
             personsSlides.forEach((currentSlide) => {
                 currentSlide.querySelector("h4").innerHTML = personsData[i].name
@@ -209,4 +208,19 @@ personPrev.onclick = () => {
 
 autoPersonSlider(personIndex)
 
-console.log(typeof request)
+// async await
+const URL = 'https://jsonplaceholder.typicode.com/posts' //API
+
+const asyncFetchData = async () => {
+    try {
+        const response = await fetch(URL)
+        const data = await response.json()
+        console.log(data)
+    } catch (e) {
+        console.log(e)
+        alert('Что-то пошло не так. Попробуйте перезагрузить страницу')
+    }
+
+}
+
+asyncFetchData()

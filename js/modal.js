@@ -41,30 +41,30 @@ window.addEventListener("scroll", checkScrollPosition)
 
 setTimeout(openModal, 10000)
 
-// const formElement = document.querySelector('form')
-//
-// const postData = (url, data) => {
-// 	fetch(url, {
-// 		method: "POST",
-// 		headers: {'Content-type': 'application/json'},
-// 		body: data
-// 	})
-// }
-//
-// const bindPostData = (form) => {
-// 	form.onsubmit = (e) => {
-// 		e.preventDefault()
-// 		const formData = new FormData(form)
-// 		const user = {}
-// 		formData.forEach((item, index) => user[index] = item)
-// 		const json = JSON.stringify(user)
-// 		if (window.location.pathname === '/project/index.html'){
-// 			postData('server.php', json)
-// 		}else {
-// 			postData('../server.php', json)
-//
-// 		}
-//
-// 	}
-// }
-// bindPostData(formElement)
+const formElement = document.querySelector('form')
+
+const postData = (url, data) => {
+	fetch(url, {
+		method: "POST",
+		headers: {'Content-type': 'application/json'},
+		body: data
+	})
+}
+
+const bindPostData = (form) => {
+	form.onsubmit = (e) => {
+		e.preventDefault()
+		const formData = new FormData(form)
+		const user = {}
+		formData.forEach((item, index) => user[index] = item)
+		const json = JSON.stringify(user)
+		if (window.location.pathname === '/project/index.html'){
+			postData('server.php', json)
+		}else {
+			postData('../server.php', json)
+
+		}
+
+	}
+}
+bindPostData(formElement)

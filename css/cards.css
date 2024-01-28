@@ -1,0 +1,40 @@
+.wrapper{
+    background-color: black;
+}
+
+.cards {
+    margin-top: 80px;
+}
+
+.inner_card_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 15px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.block h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 1em;
+    color: #555;
+}
